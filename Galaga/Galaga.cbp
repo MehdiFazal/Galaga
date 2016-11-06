@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Galaga" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Galaga" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Galaga" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Boss.cpp" />
+		<Unit filename="Boss.h" />
+		<Unit filename="Bullet.cpp" />
+		<Unit filename="Bullet.h" />
+		<Unit filename="Enemy.cpp" />
+		<Unit filename="Enemy.h" />
+		<Unit filename="Explosion.cpp" />
+		<Unit filename="Explosion.h" />
+		<Unit filename="Explosion1.cpp" />
+		<Unit filename="Explosion1.h" />
+		<Unit filename="Explosion2.cpp" />
+		<Unit filename="Explosion2.h" />
+		<Unit filename="Explosion3.cpp" />
+		<Unit filename="Explosion3.h" />
+		<Unit filename="FileManager.h" />
+		<Unit filename="Homing Missile.cpp" />
+		<Unit filename="Homing Missile.h" />
+		<Unit filename="Hunter.cpp" />
+		<Unit filename="Hunter.h" />
+		<Unit filename="LTexture.cpp" />
+		<Unit filename="LTexture.h" />
+		<Unit filename="MachineGun.cpp" />
+		<Unit filename="MachineGun.h" />
+		<Unit filename="Missile.cpp" />
+		<Unit filename="Missile.h" />
+		<Unit filename="Node.h" />
+		<Unit filename="OneHit.cpp" />
+		<Unit filename="OneHit.h" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.h" />
+		<Unit filename="Point.h" />
+		<Unit filename="PowerUp.cpp" />
+		<Unit filename="PowerUp.h" />
+		<Unit filename="Queue.cpp" />
+		<Unit filename="Queue.h" />
+		<Unit filename="Screen.cpp" />
+		<Unit filename="Screen.h" />
+		<Unit filename="Turret.cpp" />
+		<Unit filename="Turret.h" />
+		<Unit filename="TwoHit.cpp" />
+		<Unit filename="TwoHit.h" />
+		<Unit filename="Unit.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
