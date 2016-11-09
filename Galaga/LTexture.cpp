@@ -29,7 +29,7 @@ bool LTexture::LoadFromFile( std::string path , SDL_Renderer* gRenderer)
     else
     {
         //Color key image
-        SDL_SetColorKey( loadedSurface, SDL_TRUE, SDL_MapRGB( loadedSurface->format, 0, 0xFF, 0xFF ) );
+        SDL_SetColorKey( loadedSurface, SDL_TRUE, SDL_MapRGB( loadedSurface->format, 0, 0, 0 ) );
         //Create texture from surface pixels
         newTexture = SDL_CreateTextureFromSurface( gRenderer, loadedSurface );
         if( newTexture == NULL )
@@ -100,8 +100,8 @@ void LTexture::Render( int x, int y, SDL_Rect* clip , double angle, SDL_Point* c
     //Set clip rendering dimensions
     if( clip != NULL )
     {
-        renderQuad.w = clip->w;
-        renderQuad.h = clip->h;
+        renderQuad.w = clip->w+30;
+        renderQuad.h = clip->h+30;
     }
 
     //Render to screen

@@ -1,16 +1,13 @@
-#ifndef BULLET_H
-#define BULLET_H
+#pragma once
 
+#include"Unit.h"
 
-class Bullet
+class Bullet : public Unit
 {
-    public:
-        Bullet();
-        virtual ~Bullet();
-
-    protected:
-
-    private:
+public:
+    Bullet(LTexture* image, float x, float y);
+    Bullet();
+    virtual ~Bullet();
+    virtual void Move(int);
+    virtual void Render(long int& frame, SDL_Renderer* gRenderer);
 };
-
-#endif // BULLET_H
